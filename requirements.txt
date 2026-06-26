@@ -1,0 +1,20 @@
+# Core ML / fine-tuning stack (GPU required for training + 4-bit inference).
+# bitsandbytes 4-bit quantization needs a CUDA build of torch.
+torch>=2.2.0
+transformers>=4.44.0
+peft>=0.12.0
+trl>=0.10.0
+bitsandbytes>=0.43.0
+accelerate>=0.33.0
+datasets>=2.20.0
+
+# Serving + UI
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+streamlit>=1.36.0
+requests>=2.32.0
+
+# Config + secrets
+pyyaml>=6.0
+python-dotenv>=1.0.0
+pydantic>=2.7.0
